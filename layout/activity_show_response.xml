@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.esne.eop.bola8.bola8.ShowResponseActivity"
+    android:background="@drawable/gradient"
+    android:theme="@style/AppTheme"
+    >
+
+    <!--
+   Disposición lineal vertical de los elementos siguiendo
+   un Linear Layout.
+   -->
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425">
+
+        <!-- Imagen de la bola 8 -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/magic_eight_ball"
+            />
+
+        <!-- Texto mensaje con el nombre, pregunta y respuesta del usuario -->
+        <TextView
+            android:id="@+id/text_to_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/response_shape"
+            android:padding="30dp"
+            android:layout_marginBottom="70dp"
+            android:text="blablabla blabla blabla"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.218"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- Botón para cambiar la activity -->
+        <Button
+            android:id="@+id/ask_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/rounded_button"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:text="@string/another_question"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">"Bola 8"</string>
+    <string name="name_hint"> tu nombre </string>
+    <string name="question_hint"> tu pregunta </string>
+    <string name="button_get_answer">Generar respuesta</string>
+    <string name="another_question">otra pregunta</string>
+    <string name="toast_text_not_a_question">El texto que has introducido no es una pregunta. Introduce una pregunta, por favor. Usa los signos de interrogación.</string>
+
+</resources>

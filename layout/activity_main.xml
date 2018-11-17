@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.esne.eop.bola8.MainActivity"
+    android:background="@drawable/gradient"
+    >
+
+    <!--
+    Disposición lineal vertical de los elementos siguiendo
+    un Linear Layout.
+    -->
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
+
+        <!-- Imagen de la bola 8 -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/magic_eight_ball"
+            android:layout_marginBottom="40dp" />
+
+
+        <!-- Campo de texto donde el user escribe su nombre -->
+        <EditText
+            android:id="@+id/typed_name"
+            android:layout_width="201dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_button"
+            android:hint="@string/name_hint"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="#FFF"
+            android:textColorHint="#75ffffff"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="233dp" />
+
+        <!-- Campo de texto donde el user escribe su pregunta -->
+        <EditText
+            android:id="@+id/typed_question"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/rounded_button"
+            android:hint="@string/question_hint"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:textColor="#FFF"
+            android:textColorHint="#75ffffff"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="303dp" />
+
+
+        <!-- Botón para cambiar la activity -->
+        <Button
+            android:id="@+id/generate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/rounded_button"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:text="@string/button_get_answer"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
